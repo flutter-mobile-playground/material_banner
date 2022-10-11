@@ -1,3 +1,3 @@
 # material_banner
 
-![](https://github.com/phferreira/gifs/blob/master/material_banner.gif)
+![](https://github.com/phferreira/assets/blob/master/gifs/material_banner.gif)
