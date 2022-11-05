@@ -10,9 +10,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Material Banner',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 74),
       ),
       home: const MyHomePage(title: 'Show top banner'),
     );
@@ -42,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
               MaterialBanner(
                 padding: const EdgeInsets.all(12),
                 content: const Text('Message'),
-                leading: const Icon(Icons.hd),
+                leading: const Icon(Icons.message),
                 elevation: 5,
                 backgroundColor: Colors.white12,
                 actions: [
